@@ -6,4 +6,10 @@ data = {}
 
 for i in data:
     print(i)
+<<<<<<< HEAD
 print('Done..')
+=======
+print('Done..')
+
+x = input()
+>>>>>>> main

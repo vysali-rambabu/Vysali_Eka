@@ -1,9 +1,11 @@
-set param2=%2
-echo %param1%
-echo %param2%
-if "%1%"=="" (
-	GOTO error)
-set param1=%1hey
-echo %param1%
+rem set n=%1
+set s_path=%1
+FINDSTR "a=10" %s_path%\myfile.txt
+if %errorlevel%==0 (
+call run_helloworld.bat "helloworld.py"
+) else (
+GOTO error)
+GOTO end
 :error
-	echo error
+    echo "a!=20"
+:end
